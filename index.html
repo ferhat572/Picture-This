@@ -15,8 +15,15 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+<picture>
+  <!-- AI Prompt: Responsive picture element / Intent: Optimize images for different screen sizes -->
 
+  <!-- Larger image for wide screens -->
+  <source media="(min-width: 960px)" srcset="images/museum-960x.jpg 1x, images/museum-1600x.jpg 2x, images/museum-1920x.jpg 3x">
+
+  <!-- Default image for smaller screens -->
+  <img src="images/museum-480x.jpg" alt="Museum view" width="480" height="270">
+</picture>
   </header>
 </body>
 
